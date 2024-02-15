@@ -1,14 +1,15 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
+import fantasy from '../Data/fantasy';
 
 
 
 
-function CardsItems({img,title,price}) {
+function CardItems({img,title,price}) {
   return (
-    <Col sm={6} md={4} lg={3}  >
-    <Card >
+    <Col sm={6} md={4} lg={3} >
+    <Card  >
       <Card.Img variant="top" src={img} />
       <Card.Body>
         <Card.Title>{title}</Card.Title>
@@ -22,4 +23,4 @@ function CardsItems({img,title,price}) {
   );
 }
 
-export default CardsItems;
+export default CardItems;
